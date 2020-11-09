@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Questrial&family=News+Cycle&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../images/background.jpg");
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    height: 100vh;
+}
+
+
+/* navbar starts */
+
+.fa-bars {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 45px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+#login-signup {
+    font-size: large;
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
+    letter-spacing: 2px;
+}
+
+#login-btn {
+    margin-right: 50px;
+}
+
+#login-btn:hover {
+    color: rgb(255, 51, 0);
+}
+
+#signup-btn {
+    border: 0;
+    width: 100px;
+    padding: 5px;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+#signup-btn:hover {
+    background-color: rgb(141, 31, 3);
+    color: white;
+    box-shadow: 2px 5px 7px black;
+}
+
+
+/* navbar ends */
+
+
+/* main starts */
+
+main {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#intro h2 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 110px;
+    text-align: center;
+}
+
+#intro h3 {
+    font-size: 30px;
+    margin-top: 40px;
+    float: right;
+    color: whitesmoke;
+}
+
+#intro h3 span {
+    color: rgb(141, 31, 3);
+}
+
+
+/* main ends */
+
+
+/* media queries starts */
+
+@media (max-width: 1050px) {
+    #intro h2 {
+        font-size: 13vw;
+    }
+    #intro h4 {
+        text-align: center;
+        font-size: 3.4vw;
+    }
+    #intro h3 {
+        text-align: center;
+        float: none;
+        font-size: 4vw;
+    }
+    #login-btn {
+        margin-right: unset;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar-brand {
+        font-size: 7vw;
+    }
+    #login-signup {
+        position: unset;
+    }
+}
+
+
+/* media queries ends */
