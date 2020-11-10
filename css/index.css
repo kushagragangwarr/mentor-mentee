@@ -59,9 +59,16 @@ body {
     transition: .4s;
 }
 
+#signup-btn a {
+    color: black;
+}
+
+#signup-btn a:hover {
+    color: whitesmoke;
+}
+
 #signup-btn:hover {
     background-color: rgb(141, 31, 3);
-    color: white;
     box-shadow: 2px 5px 7px black;
 }
 
