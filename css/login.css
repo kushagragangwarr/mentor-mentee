@@ -284,6 +284,10 @@ body {
     color: rgb(252, 99, 107);
 }
 
+#signup-alert {
+    display: none;
+    margin-bottom: 0 !important;
+}
 .content-w3ls {
     display: flex;
     flex-direction: column;
