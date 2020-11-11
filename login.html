@@ -17,7 +17,7 @@
     <link rel="icon" href="./images/handshake.png">
     <link rel="stylesheet" href="css/login.css" type="text/css" media="all">
     <script src="https://kit.fontawesome.com/86348c2231.js" crossorigin="anonymous"></script>
-
+    <script src="./js/login.js" defer></script>
     <link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
 
@@ -38,21 +38,21 @@
                     <img src="./images/handshake.png" alt="Handshake" height="70px" width="70px">
                 </div>
                 <div class="content-bottom">
-                    <form action="#" method="post">
+                    <form method="post">
                         <div class="field-group">
                             <span class="fa fa-user" aria-hidden="true"></span>
                             <div class="wthree-field">
-                                <input name="text" id="text" type="text" value="" placeholder="Email or Username" required>
+                                <input name="username" id="name" type="text" value="" placeholder="Email or Username" required>
                             </div>
                         </div>
                         <div class="field-group">
                             <span class="fa fa-lock" aria-hidden="true"></span>
                             <div class="wthree-field">
-                                <input name="password" id="myInput" type="Password" placeholder="Password">
+                                <input name="password" id="pass" type="Password" placeholder="Password" required>
                             </div>
                         </div>
                         <div class="wthree-field">
-                            <button type="submit" class="btn">Login</button>
+                            <button id="login-submit-btn" type="submit" class="btn">Login</button>
                         </div>
                         <ul class="list-login">
                             <li class="switch-agileits">

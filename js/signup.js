@@ -12,7 +12,11 @@ signupSubmitBtn.addEventListener("click", e => {
     if (emailInput.value === "" || nameInput.value === "" || passInput.value === "") 
         return;
     e.preventDefault();
+    localStorage.setItem("accounts", JSON.stringify({name: nameInput.value, email: emailInput.value, pass: passInput.value}));
     signupAlertBox.style.display = "block";
+    setTimeout(()=> {
+        location.assign('../login.html');
+    } ,1500);
 });
 
 signupAlertBoxCloseBtn.addEventListener("click", ()=> {
