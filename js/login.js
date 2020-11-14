@@ -17,6 +17,7 @@ loginSubmitBtn.addEventListener("click", e => {
     accounts = JSON.parse(accounts);
     if (accounts.name === nameInput.value || accounts.email === nameInput.value) {
         if (accounts.pass === passInput.value)
+            // location.assign("../main.html");
             location.assign("../../mentor-mentee/main.html");
         else passAlert();
     } else userAlert();

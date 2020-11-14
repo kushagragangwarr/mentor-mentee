@@ -15,6 +15,7 @@ signupSubmitBtn.addEventListener("click", e => {
     localStorage.setItem("accounts", JSON.stringify({name: nameInput.value, email: emailInput.value, pass: passInput.value}));
     signupAlertBox.style.display = "block";
     setTimeout(()=> {
+        // location.assign('../login.html');
         location.assign('../../mentor-mentee/login.html');
     } ,1500);
 });
