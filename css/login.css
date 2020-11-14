@@ -288,6 +288,14 @@ body {
     display: none;
     margin-bottom: 0 !important;
 }
+
+#no-user-alert,
+#wrong-pass-alert {
+    display: none;
+    margin-left: 20px;
+    color: red;
+}
+
 .content-w3ls {
     display: flex;
     flex-direction: column;
