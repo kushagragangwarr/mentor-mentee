@@ -22,12 +22,13 @@
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="./index.html">Guide.Me</a>
-        <div id="logout" class="navbar-nav">
+        <div id="logout" class="logout navbar-nav">
             <a id="logout-btn" class="nav-link float-right" href="" aria-disabled="true">Logout</a>
         </div>
+        <i id="toggler" class="fa fa-bars"></i>
     </nav>
 
-    <aside id="sidebar" class="bg-dark">
+    <aside id="sidebar" class="bg-dark right100">
         <h3 id="sidebar-heading"><i class="fas fa-filter"></i> Filters</h3>
         <form action="">
             <div class="custom-control custom-checkbox">
@@ -139,10 +140,6 @@
                 <label class="custom-control-label" for="scheduling">Scheduling</label>
             </div>
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="design" name="filters">
-                <label class="custom-control-label" for="design">Design</label>
-            </div>
-            <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="videocreation" name="filters">
                 <label class="custom-control-label" for="videocreation">Video Creation</label>
             </div>
@@ -155,6 +152,9 @@
                 <label class="custom-control-label" for="cybersecurity">Cybersecurity</label>
             </div>
         </form>
+        <div id="logout-bottom" class="logout navbar-nav">
+            <a id="logout-bottom-btn" class="nav-link" href="" aria-disabled="true">Logout</a>
+        </div>
     </aside>
 
     <main id="cards-container">
@@ -163,9 +163,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar1.png" alt="avatar">
             <div class="details bg-light webdev python psychology">
-                Name: Alex<br>
-                Email: <a href="mailto: alex@gmail.com">alex@gmail.com</a><br>
-                Skills: Web Dev, Python, Psychology<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Alex<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: alex@gmail.com">alex@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Web Dev, Python, Psychology<br>
             </div>
         </div>
         <div class="cards">
@@ -173,9 +173,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar3.png" alt="avatar">
             <div class="details bg-light devops gamedevelopment">
-                Name: William<br>
-                Email: <a href="mailto: william@gmail.com">william@gmail.com</a><br>
-                Skills: DevOps, Game Development<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> William<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: william@gmail.com">william@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>DevOps, Game Development<br>
             </div>
         </div>
         <div class="cards">
@@ -183,9 +183,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar5.jpg" alt="avatar">
             <div class="details bg-light java networking">
-                Name: James<br>
-                Email: <a href="mailto: james@gmail.com">james@gmail.com</a><br>
-                Skills: Java, Networking<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> James<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: james@gmail.com">james@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Java, Networking<br>
             </div>
         </div>
         <div class="cards">
@@ -193,9 +193,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar2.png" alt="avatar">
             <div class="details bg-light datastructures programming shell ios">
-                Name: Nina<br>
-                Email: <a href="mailto: nina@gmail.com">nina@gmail.com</a><br>
-                Skills: Data Structures, Programming, Shell, ios<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Nina<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: nina@gmail.com">nina@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Data Structures, Programming, Shell, ios<br>
             </div>
         </div>
         <div class="cards">
@@ -203,9 +203,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar5.jpg" alt="avatar">
             <div class="details bg-light python psychology programming">
-                Name: Evelyn<br>
-                Email: <a href="mailto: evelyn@gmail.com">evelyn@gmail.com</a><br>
-                Skills: Python, Psychology, Programming<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Evelyn<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: evelyn@gmail.com">evelyn@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Python, Psychology, Programming<br>
             </div>
         </div>
         <div class="cards">
@@ -213,9 +213,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar1.png" alt="avatar">
             <div class="details bg-light dbms mathematics frontend">
-                Name: Ella<br>
-                Email: <a href="mailto: ella@gmail.com">ella@gmail.com</a><br>
-                Skills: DBMS, Mathematics, Frontend<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Ella<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: ella@gmail.com">ella@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>DBMS, Mathematics, Frontend<br>
             </div>
         </div>
         <div class="cards">
@@ -223,9 +223,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar2.png" alt="avatar">
             <div class="details bg-light webdev python psychology devops java">
-                Name: Avery<br>
-                Email: <a href="mailto: avery@gmail.com">avery@gmail.com</a><br>
-                Skills: Web Dev, Python, Psychology, DevOps, Java<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Avery<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: avery@gmail.com">avery@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Web Dev, Python, Psychology, DevOps, Java<br>
             </div>
         </div>
         <div class="cards">
@@ -233,9 +233,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar4.png" alt="avatar">
             <div class="details bg-light gamedevelopment datastructures">
-                Name: Jackson<br>
-                Email: <a href="mailto: jackson@gmail.com">jackson@gmail.com</a><br>
-                Skills: Game Development, Data Structures<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Jackson<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: jackson@gmail.com">jackson@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Game Development, Data Structures<br>
             </div>
         </div>
         <div class="cards">
@@ -243,9 +243,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar1.png" alt="avatar">
             <div class="details bg-light design testing">
-                Name: Jack<br>
-                Email: <a href="mailto: jack@gmail.com">jack@gmail.com</a><br>
-                Skills: Design, Testing<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Jack<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: jack@gmail.com">jack@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Design, Testing<br>
             </div>
         </div>
         <div class="cards">
@@ -253,9 +253,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar2.png" alt="avatar">
             <div class="details bg-light projectmanagement socialmediamanagement">
-                Name: Scarlett<br>
-                Email: <a href="mailto: scarlett@gmail.com">scarlett@gmail.com</a><br>
-                Skills: Project Management, Social Media Management<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Scarlett<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: scarlett@gmail.com">scarlett@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Project Management, Social Media Management<br>
             </div>
         </div>
         <div class="cards">
@@ -263,9 +263,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar3.png" alt="avatar">
             <div class="details bg-light research bigdata">
-                Name: Finch<br>
-                Email: <a href="mailto: finch@gmail.com">finch@gmail.com</a><br>
-                Skills: Research, Big Data<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Finch<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: finch@gmail.com">finch@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Research, Big Data<br>
             </div>
         </div>
         <div class="cards">
@@ -273,9 +273,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar4.png" alt="avatar">
             <div class="details bg-light html css js react projectmanagement">
-                Name: Mercer<br>
-                Email: <a href="mailto: mercer@gmail.com">mercer@gmail.com</a><br>
-                Skills: HTML, CSS, JS, React, Project Management<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Mercer<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: mercer@gmail.com">mercer@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>HTML, CSS, JS, React, Project Management<br>
             </div>
         </div>
         <div class="cards">
@@ -283,9 +283,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar5.jpg" alt="avatar">
             <div class="details bg-light benchmarking operations scheduling design">
-                Name: Johnson<br>
-                Email: <a href="mailto: johnson@gmail.com">johnson@gmail.com</a><br>
-                Skills: Benchmarking, Operations, Scheduling, Design<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Johnson<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: johnson@gmail.com">johnson@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Benchmarking, Operations, Scheduling, Design<br>
             </div>
         </div>
         <div class="cards">
@@ -293,9 +293,9 @@
                 title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
             <img src="./images/avatar1.png" alt="avatar">
             <div class="details bg-light videocreation informationsecurity cybersecurity">
-                Name: Singer<br>
-                Email: <a href="mailto: singer@gmail.com">singer@gmail.com</a><br>
-                Skills: Video Creation, Information Security, Cybersecurity<br>
+                <strong><i class="fas fa-user"></i> Name:</strong> Singer<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: singer@gmail.com">singer@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Video Creation, Information Security, Cybersecurity<br>
             </div>
         </div>
     </main>
