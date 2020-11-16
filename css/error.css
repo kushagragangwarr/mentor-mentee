@@ -57,6 +57,13 @@ body {
     padding: 1rem 1.7rem;
     font-family: 'Changa', sans-serif;
     cursor: pointer;
+    transition: .4s;
+}
+
+#btn:hover {
+    background-color: whitesmoke;
+    box-shadow: .5px .5px 5px black;
+    color: black;
 }
 
 a {

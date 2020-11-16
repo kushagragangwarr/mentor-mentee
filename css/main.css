@@ -1,5 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Questrial&family=News+Cycle&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.hide {
+    display: none;
+}
+
+/* Navbar starts */
+
+.fa-bars {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.navbar-brand {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 45px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+#logout {
+    font-size: large;
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
+    letter-spacing: 2px;
+}
+
+#logout-btn:hover {
+    color: rgb(255, 51, 0);
+}
+
+/* Navbar starts */
+
+/* Sidebar starts */
+
+#sidebar {
+    color: white;
+    text-align: justify;
+    position: fixed;
+    top: 93px;
+    height: 90.5vh;
+    width: 300px;
+    padding: 20px;
+    transition: .5s;
+}
+
+#sidebar-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#sidebar-heading:hover .fa-filter {
+    color: royalblue !important; 
+}
+
+#sidebar label:hover {
+    color: royalblue;
+    cursor: pointer;
+}
+
+/* Sidebar ends */
+
+/* main card container starts */
+
+#cards-container {
+    margin-top: 120px;
+    margin-left: 450px;
+}
+
+.cards {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgb(207, 206, 206);
+    display: inline-block;
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.cards:hover {
+    box-shadow: 4px 4px 15px rgb(207, 206, 206), -4px -4px 15px rgb(207, 206, 206);
+}
+
+#cards-container img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#tooltip {
+    cursor: pointer;
+    float: right;
+}
+
+.details {
+    padding: 10px;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* main card container ends */
+
+/* Media Queries starts */
+
+@media (max-width: 700px) {
+    .navbar-brand {
+        font-size: 7vw;
+    }
+
+    #sidebar {
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+    }
+
+    #sidebar-heading {
+        font-size: 5.4vw !important;
+    }
+
+    #cards-container {
+        margin-left: 15vw;
+    }
+
+    .cards {
+        width: 240px;
+    }
+}
+
+@media (max-width: 585px) {
+    #cards-container {
+        margin-left: 24vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #sidebar {
+        right: 0;
+        top: 8vh;
+        /* display: none; */
+    }
+}
+
+/* Media Queries ends */
