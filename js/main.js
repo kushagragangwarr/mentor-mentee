@@ -4,6 +4,7 @@ const filterLabels = document.querySelectorAll(".custom-control-label");
 const detailsDivs = document.querySelectorAll(".details");
 const sidebar = document.querySelector("#sidebar");
 const toggler = document.querySelector("#toggler");
+const logoutLeft = document.querySelector("#logout-left");
 const filterArray = [];
 
 // Setting the routes
@@ -59,9 +60,13 @@ function checkFilter(e) {
 function checkSidebar() {
     if (sidebar.classList.contains("right100")) {
         sidebar.classList.remove("right100");
+        logoutLeft.classList.remove("left100");
         sidebar.classList.add("right0");
+        logoutLeft.classList.add("left0");
     } else {
         sidebar.classList.remove("right0");
+        logoutLeft.classList.remove("left0");
         sidebar.classList.add("right100");
+        logoutLeft.classList.add("left100");
     }
 }

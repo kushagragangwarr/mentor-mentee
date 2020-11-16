@@ -35,24 +35,29 @@
     justify-content: space-between !important;
 }
 
-#logout,
-#logout-bottom {
+#logout {
     font-size: large;
     text-align: center;
     font-family: 'News Cycle', sans-serif;
     letter-spacing: 2px;
 }
 
-#logout-btn:hover,
-#logout-bottom-btn:hover {
+#logout-btn:hover {
     color: rgb(255, 51, 0);
 }
 
-#logout-bottom {
+#logout-left {
+    transition: .5s;
+    text-align: center;
     display: none;
-    position: absolute;
-    bottom: 0;
-    width: 255px;
+    padding: 10px;
+    position: fixed;
+    top: 13vw;
+    width: 150px;
+}
+
+#logout-left-btn:hover {
+    color: red;
 }
 
 #toggler {
@@ -65,6 +70,7 @@
 /* Sidebar starts */
 
 #sidebar {
+    left: -250px;
     color: white;
     text-align: justify;
     position: fixed;
@@ -73,6 +79,14 @@
     width: 300px;
     padding: 20px;
     transition: .5s;
+}
+
+#sidebar:hover {
+    left: 0;
+}
+
+#sidebar:hover #right-arrow {
+    opacity: 0;
 }
 
 #sidebar-heading {
@@ -90,13 +104,21 @@
     cursor: pointer;
 }
 
+#right-arrow {
+    transition: .5s;
+    opacity: 1;
+    font-size: 30px;
+    position: absolute;
+    right: 12px;
+}
+
 /* Sidebar ends */
 
 /* main card container starts */
 
 #cards-container {
     margin-top: 120px;
-    margin-left: 450px;
+    margin-left: 110px;
 }
 
 .cards {
@@ -142,7 +164,7 @@
         display: none;
     }
 
-    #logout-bottom {
+    #logout-left {
         display: block;
     }
 
@@ -158,9 +180,27 @@
         right: 0;
     }
 
+    .left100 {
+        left: -100%;
+    }
+
+    .left0 {
+        left: 0;
+    }
+
+    #right-arrow {
+        display: none;
+    }
+
     #sidebar {
+        left: unset;
         top: 8vh;
         height: 92vh;
+    }
+
+    #sidebar:hover {
+        left: unset;
+        right: 0;
     }
 
     #sidebar-heading {
